@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      #app {
+        margin: 20px auto;
+        width: 800px;
+        padding: 200px;
+        text-align: center;
+        border: 2px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+        <div id="app">
+          <input class="form-control" v-model="name" type="text">
+          <h1>{{name}}</h1>
+        </div>
+  </body>
+  <script src="./Observer.js"></script>
+  <script src="./watcher.js"></script>
+  <script src="./compile.js"></script>
+  <script src="./index.js"></script>
+  <script>
+    const vm = new Mvue({
+        el: "#app",
+        data: {
+          name: "我是摩登"
+        }
+      });
+  //  const vm = new Mvue({
+  //    el:"#app",
+  //    data:{
+  //      name:"俞菁田"
+  //    }
+  //  },"name")
+  // var modeng = {name:12}
+  // var value;
+  // Object.defineProperty(modeng,"name",{
+  //   get(){
+  //     return value
+  //   },
+  //   set(newVal){
+  //      console.log(name)
+  //      value = newVal;
+  //   }
+  // })
+  // modeng.name = 18;
+  // console.log(modeng.name)
+  </script>
+</html>
